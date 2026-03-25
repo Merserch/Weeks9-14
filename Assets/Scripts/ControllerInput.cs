@@ -35,13 +35,13 @@ public class ControllerInput : MonoBehaviour
     public void OnPoint(InputAction.CallbackContext context)
     {
         //same as Mouse.current.position.ReadValue()
-        //mouseMovement = Camera.main.ScreenToWorldPoint(context.ReadValue<Vector2>());
+        mouseMovement = Camera.main.ScreenToWorldPoint(context.ReadValue<Vector2>());
         
     }
 
     public void OnLook(InputAction.CallbackContext context)
     {
         //same as Mouse.current.position.ReadValue()
-        rotation = context.ReadValue<Vector2>();
+        //rotation = context.ReadValue<Vector2>();
     }
 }
