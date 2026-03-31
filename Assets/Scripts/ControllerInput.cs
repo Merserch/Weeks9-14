@@ -28,6 +28,7 @@ public class ControllerInput : MonoBehaviour
         if(context.performed == true)
         {
             SFX.Play();
+
         }
 
     }
