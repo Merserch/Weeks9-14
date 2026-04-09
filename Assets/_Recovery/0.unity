@@ -203,7 +203,19 @@ MonoBehaviour:
     m_ActionId: 6b444451-8a00-4d00-a97e-f47457f736a8
     m_ActionName: 'Player/Look[/Mouse/delta]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 135704252}
+        m_TargetAssemblyTypeName: Punch, Assembly-CSharp
+        m_MethodName: OnPunch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 6c2ab1b8-8984-453a-af3d-a3c78ae1679a
     m_ActionName: 'Player/Attack[/Mouse/leftButton,/Keyboard/enter]'
   - m_PersistentCalls:
@@ -408,33 +420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104654c725d825c4e9af078395cb8572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Punch
-  handPos: {fileID: 135704250}
-  start: {x: 0.6, y: 0.16}
-  end: {x: 0.21, y: 0.81}
-  swinging:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.012886598
-      value: 0.00245459
-      inSlope: 0.05464838
-      outSlope: 0.05464838
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.5205756
-    - serializedVersion: 3
-      time: 0.995697
-      value: 0.99754715
-      inSlope: 0.3539975
-      outSlope: 0.3539975
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.05510654
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  handPosition: {x: 0, y: 0, z: 0}
   attackRange: 1
 --- !u!1 &300374043
 GameObject:
